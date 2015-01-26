@@ -1,7 +1,8 @@
 # Proxy_Server
-Implementation of a proxy server
+
 DESCRIPTION:
 The scenario is that we have a private network with a number of client computers that do not have direct connection to the Internet. The access to the Internet is provided by the web proxy server. Any client, when he/she wants to communicate with some remote web server, will contact the web proxy server to get forwarding service.
+
 The goal of the application is to communicate between client and external web server (e.g., Google or UT Dallas web server) through the web proxy server. This web proxy server will work as Internet gateway at the application layer. If a client wants to go to www.google.com, it will pass the requested application layer job (like getting www.google.com homepage) to the web proxy server. And the web proxy server will get the requested content from the Google web server and then will pass it to the client. The client is single-threaded and uses TCP connection to communicate with the web proxy server. So the client does not connect to the external web server directly.
 
 I have done my programming in C, so the following codes can be used for compilation:
